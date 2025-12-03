@@ -35,6 +35,7 @@ All results are saved to a CSV file for further analysis.
 ```python
 CLIENT_KEY = "your_client_key_here"
 CLIENT_SECRET = "your_client_secret_here"
+```
 
 
 ### 3. Add TikTok usernames to scrape:
