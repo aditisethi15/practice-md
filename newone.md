@@ -37,12 +37,11 @@ CLIENT_KEY = "your_client_key_here"
 CLIENT_SECRET = "your_client_secret_here"
 ```
 
-
 ### 3. Add TikTok usernames to scrape:
 
 ```python
 USERNAMES = ["redditdailyvid", "storytime_confessions", "exampleuser"]
-
+```
 ### 4. Adjust the date range:
 
 ```python
@@ -50,9 +49,45 @@ from datetime import date
 
 start_date = date(2025, 11, 1)
 end_date = date(2025, 11, 9)
-
+```
 ### 5. (Optional) Change the output CSV filename:
 
 ```python
 CSV_FILE = "tiktok_user_videos_and_transcripts.csv"
+```
 
+### Usage
+
+Run the script from your terminal:
+
+```python
+python script_name.py
+```
+
+For each username, the script will:
+
+Authenticate with TikTok API
+Query videos in the specified date range
+Retrieve transcripts (if available)
+Append results to the CSV file
+
+You will see progress printed in the console:
+```python
+Access token obtained.
+Retrieved 12 videos for 'redditdailyvid'
+Retrieved 9 videos for 'storytime_confessions'
+Captions + transcripts saved to tiktok_user_videos_and_transcripts.csv
+```
+
+### Output
+
+The CSV file contains:
+
+```python
+id: 1234567890
+username: exampleuser	
+caption: “Am I the jerk for…”
+Like_count: 15400
+View_count: 102300
+transcript: "So this story begins when…"
+```
