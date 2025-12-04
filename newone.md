@@ -87,7 +87,7 @@ The CSV file contains:
 id: 1234567890
 username: exampleuser	
 caption: “Am I the jerk for…”
-Like_count: 15400
-View_count: 102300
+like_count: 15400
+view_count: 102300
 transcript: "So this story begins when…"
 ```
